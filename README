@@ -1,0 +1,14 @@
+ssh.py is a simple wrapper around SSH that uses python threads to allow
+parallel ssh.
+
+usage:
+
+import ssh
+ssh.ssh('hostname', 'command')
+==> ('hostname', ('stdout', 'stderr'))
+
+ssh.parallel_ssh(['host1','host2'], 'command')
+==> { 'host1' : ('stdout', 'stderr'),
+      'host2' : ('stdout', 'stderr') }
+
+
