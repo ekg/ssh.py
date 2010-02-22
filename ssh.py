@@ -198,7 +198,7 @@ def parallel_ssh(host_list, command, print_output=True, fork=False, timeout=True
                         (len(host_list) - len(__parallel_ssh_results.keys()))))
         time.sleep(0.1)
         if progressive_results_dissection:
-            # give us the unique kinds of results
+            # TODO give us the unique kinds of results
             pass
 
     if not fork:
